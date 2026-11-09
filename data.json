@@ -1,6 +1,7 @@
 {
   "recipes": [
     {
+      "id": 1,
       "title": "Spaghetti Carbonara",
       "caloriesPerServing": 520,
       "chef": "Gennaro Contaldo",
@@ -9,6 +10,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800&q=80"
     },
     {
+      "id": 2,
       "title": "Chicken Tikka Masala",
       "caloriesPerServing": 480,
       "chef": "Madhur Jaffrey",
@@ -17,6 +19,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80"
     },
     {
+      "id": 3,
       "title": "Beef Tacos",
       "caloriesPerServing": 350,
       "chef": "Rick Bayless",
@@ -25,6 +28,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80"
     },
     {
+      "id": 4,
       "title": "Greek Salad",
       "caloriesPerServing": 220,
       "chef": "Diane Kochilas",
@@ -33,6 +37,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80"
     },
     {
+      "id": 5,
       "title": "Pad Thai",
       "caloriesPerServing": 540,
       "chef": "Jet Tila",
@@ -41,6 +46,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&q=80"
     },
     {
+      "id": 6,
       "title": "French Onion Soup",
       "caloriesPerServing": 310,
       "chef": "Julia Child",
@@ -49,6 +55,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80"
     },
     {
+      "id": 7,
       "title": "Avocado Toast",
       "caloriesPerServing": 280,
       "chef": "Alison Roman",
@@ -57,6 +64,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa9d6d2f32?w=800&q=80"
     },
     {
+      "id": 8,
       "title": "Salmon Sushi Rolls",
       "caloriesPerServing": 390,
       "chef": "Masaharu Morimoto",
@@ -65,6 +73,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&q=80"
     },
     {
+      "id": 9,
       "title": "Chocolate Chip Cookies",
       "caloriesPerServing": 150,
       "chef": "Ruth Wakefield",
@@ -73,6 +82,7 @@
       "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800&q=80"
     },
     {
+      "id": 10,
       "title": "Shakshuka",
       "caloriesPerServing": 270,
       "chef": "Yotam Ottolenghi",
