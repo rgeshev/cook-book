@@ -21,6 +21,7 @@ export default function RecipeCard({
                     <Text style={styles.title}>{title}</Text>
                 </View>
                 <Text style={styles.subtitle}>{chef} - prep: {formatDuration(durationMinutes)} minutes</Text>
+                <Text style={styles.calories}>{caloriesPerServing} calories per serving</Text>
             </View>
         </View>
     );
