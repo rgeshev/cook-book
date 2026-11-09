@@ -1,6 +1,7 @@
 import { Text, View, StyleSheet, Image } from 'react-native';
 import { colors } from '../theme';
 import { formatDuration } from '../utils/dateTimeUtils';
+import Tag from './Tag';
 
 export default function RecipeCard({
     title,
@@ -22,6 +23,7 @@ export default function RecipeCard({
                 </View>
                 <Text style={styles.subtitle}>{chef} - prep: {formatDuration(durationMinutes)} minutes</Text>
                 <Text style={styles.calories}>{caloriesPerServing} calories per serving</Text>
+                <Tag cuisine={cuisine} />
             </View>
         </View>
     );
