@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import { Text, View, StatusBar } from 'react-native';
 import RecipeDetails from './components/RecipeDetails';
 import { useState } from 'react';
 
@@ -20,6 +20,8 @@ export default function App() {
 
   return (
     <View style={{ backgroundColor: colors.background,  flex: 1 }}>
+      <StatusBar barStyle="light-content" />
+
       {selectedRecipe
       ?  <RecipeDetails recipe={selectedRecipe} onBack={backHandler} />
       : <RecipeList recipes={data.recipes} onSelect={selectRecipeHandler}/> 
