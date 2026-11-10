@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet, Image, Pressable } from 'react-native';
 import { colors } from '../theme';
 import { formatDuration } from '../utils/dateTimeUtils';
 import Tag from './Tag';
@@ -12,9 +12,10 @@ export default function RecipeCard({
     cuisine,
     durationMinutes,
     servings,
+    onSelect,
 }) {
     return (
-        <View style={styles.card}>
+        <Pressable style={styles.card} onPress={onSelect}>
             <Image source={{ uri: imageUrl }} style={styles.poster} />
 
             < View style={styles.info}>
@@ -25,7 +26,7 @@ export default function RecipeCard({
                 <Text style={styles.calories}>{caloriesPerServing} calories per serving</Text>
                 <Tag cuisine={cuisine} />
             </View>
-        </View>
+        </Pressable>
     );
 }
 

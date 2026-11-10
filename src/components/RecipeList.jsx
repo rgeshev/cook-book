@@ -5,7 +5,8 @@ import { colors } from '../theme';
 import RecipeCard from './RecipeCard';
 
 export default function RecipeList({ 
-    recipes
+    recipes,
+    onSelect,
  }) {
     return (
         <ScrollView contentContainerStyle={styles.content}>
@@ -15,7 +16,7 @@ export default function RecipeList({
             </View>
             
             {recipes.map((recipe) => (
-                <RecipeCard key={recipe.id} {...recipe} />
+                <RecipeCard key={recipe.id} {...recipe} onSelect={() => onSelect(recipe)}/>
             ))}
         </ScrollView>
     );
