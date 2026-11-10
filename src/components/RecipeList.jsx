@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, ScrollView } from 'react-native';
 
 import { colors } from '../theme';
 
@@ -8,7 +8,7 @@ export default function RecipeList({
     recipes
  }) {
     return (
-        <View styles={styles.content}>
+        <ScrollView contentContainerStyle={styles.content}>
             <View styles={styles.header}>
             <Text style={styles.title }>Recipe List</Text> 
             <Text style={styles.subtitle}>{recipes.length} recipes found</Text>
@@ -17,7 +17,7 @@ export default function RecipeList({
             {recipes.map((recipe) => (
                 <RecipeCard key={recipe.id} {...recipe} />
             ))}
-        </View>
+        </ScrollView>
     );
 }
 
