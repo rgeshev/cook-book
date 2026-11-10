@@ -14,10 +14,14 @@ export default function App() {
     setSelectedRecipe(recipe);
   }
 
+  const backHandler = () => {
+    setSelectedRecipe(null)
+  }
+
   return (
     <View style={{ backgroundColor: colors.background,  flex: 1 }}>
       {selectedRecipe
-      ?  <RecipeDetails recipe={selectedRecipe} />
+      ?  <RecipeDetails recipe={selectedRecipe} onBack={backHandler} />
       : <RecipeList recipes={data.recipes} onSelect={selectRecipeHandler}/> 
       }
       

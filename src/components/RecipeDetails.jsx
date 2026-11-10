@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView, Pressable } from 'react-native';
 import { colors } from '../theme';
 import { formatDuration } from '../utils/dateTimeUtils';
 import Tags from './Tag';
@@ -6,9 +6,16 @@ import RecipeDetailsRow from './RecipeDetailsRow';
 
 export default function RecipeDetails({
     recipe,
+    onBack,
 }) {
     return (
         <ScrollView contentContainerStyle={styles.content}>
+            <View style={styles.topBar}>
+                <Pressable style={styles.backButton} onPress={onBack}>
+                <Text style={styles.backText}>Back</Text>
+                </Pressable>
+            </View>
+
            <Image source={{ uri: recipe.imageUrl }} style={styles.poster} /> 
 
            <Text style={styles.title}>{recipe.title}</Text>
